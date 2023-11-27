@@ -22,7 +22,7 @@ parser = argparse.ArgumentParser(description='PyTorch ImageNet Attack Evaluation
 
 parser.add_argument('--input_dir', default='./dataset/dataset/SubImageNetVal', help='the path of original dataset')
 
-parser.add_argument('--output_dir', default='./output/resnet50/PGD/iaa_t_', help='the path of the saved dataset')
+parser.add_argument('--output_dir', default='./output/resnet152/PGD/iaa_t_', help='the path of the saved dataset')
 parser.add_argument('--attack_method', default='pgd', type=str,choices=['fgsm','pgd'])
 parser.add_argument('--batch_size', type=int, default=50, metavar='N',help='input batch size for adversarial attack')
 parser.add_argument('--ensemble', default=0, type=int) # 1为True
